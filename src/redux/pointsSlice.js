@@ -1,9 +1,18 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
+// Constants for API request types
 const TYPE_CUSTOMER = 'customers';
 const TYPE_HISTORY = 'history';
+// Base URL for API endpoints
 const BASE_URL = 'http://localhost:3001';
 
+/**
+ * Fetch data from API based on the specified type.
+ *
+ * @param {string} type - The type of data to fetch, either 'customers' or 'history'.
+ * @returns {Promise<Array>} - Returns an array of fetched data.
+ * @throws Will throw an error if the fetch request is unsuccessful.
+ */
 async function fetchApi(type) {
   try {
     const response = await fetch(`${BASE_URL}/${type}`);
@@ -22,6 +31,12 @@ async function fetchApi(type) {
   }
 }
 
+/**
+ * Asynchronous thunk action to fetch customer and history data.
+ *
+ * This action fetches both customer and history data from the API 
+ * and sets them in the redux state.
+ */
 export const fetchData = createAsyncThunk('points/fetchData', async () => {
   const data = { customers: [], history: [] };
   data.customers = await fetchApi(TYPE_CUSTOMER);
@@ -29,6 +44,11 @@ export const fetchData = createAsyncThunk('points/fetchData', async () => {
   return data;
 });
 
+/**
+ * Redux slice for handling points related data.
+ *
+ * This slice contains reducers for managing state related to customers and their purchase history.
+ */
 const pointsSlice = createSlice({
   name: 'points',
   initialState: {
@@ -56,4 +76,5 @@ const pointsSlice = createSlice({
   },
 });
 
+// Exporting the reducer function for the points slice.
 export default pointsSlice.reducer;
