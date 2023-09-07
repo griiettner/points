@@ -35,3 +35,5 @@ Run de application
 ```
 npm run dev
 ```
+
+<img width="936" alt="image" src="https://github.com/griiettner/points/assets/523781/35ed1c51-61a7-4c1c-8981-587df09b3546">
