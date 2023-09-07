@@ -1,0 +1,147 @@
+{
+  "customers": [
+    {
+      "id": 1,
+      "name": "Maurice Jackson"
+    },
+    {
+      "id": 2,
+      "name": "Joseph Andenoid"
+    },
+    {
+      "id": 3,
+      "name": "Samantha Williams"
+    },
+    {
+      "id": 4,
+      "name": "Robert Smith"
+    }
+  ],
+  "history": [
+    {
+      "customer": 2,
+      "date": "2023-10-09T14:28:50.584Z",
+      "amount": 48.59
+    },
+    {
+      "customer": 4,
+      "date": "2023-09-11T16:44:54.026Z",
+      "amount": 49.43
+    },
+    {
+      "customer": 3,
+      "date": "2023-08-17T12:03:50.159Z",
+      "amount": 176.61
+    },
+    {
+      "customer": 1,
+      "date": "2023-09-06T23:40:11.818Z",
+      "amount": 73.58
+    },
+    {
+      "customer": 3,
+      "date": "2023-08-26T10:19:35.491Z",
+      "amount": 102.55
+    },
+    {
+      "customer": 4,
+      "date": "2023-08-19T12:49:55.604Z",
+      "amount": 176.74
+    },
+    {
+      "customer": 2,
+      "date": "2023-10-24T03:58:54.104Z",
+      "amount": 89.03
+    },
+    {
+      "customer": 3,
+      "date": "2023-08-12T12:51:02.462Z",
+      "amount": 32.87
+    },
+    {
+      "customer": 3,
+      "date": "2023-10-24T20:49:54.526Z",
+      "amount": 96.82
+    },
+    {
+      "customer": 4,
+      "date": "2023-08-23T17:22:56.229Z",
+      "amount": 146.99
+    },
+    {
+      "customer": 3,
+      "date": "2023-07-21T23:08:59.412Z",
+      "amount": 132.89
+    },
+    {
+      "customer": 2,
+      "date": "2023-08-26T15:11:03.664Z",
+      "amount": 154.49
+    },
+    {
+      "customer": 3,
+      "date": "2023-09-03T15:39:17.663Z",
+      "amount": 92.04
+    },
+    {
+      "customer": 2,
+      "date": "2023-09-26T21:26:26.267Z",
+      "amount": 121.36
+    },
+    {
+      "customer": 1,
+      "date": "2023-07-18T01:48:35.033Z",
+      "amount": 30.26
+    },
+    {
+      "customer": 2,
+      "date": "2023-10-14T04:39:33.311Z",
+      "amount": 120.75
+    },
+    {
+      "customer": 1,
+      "date": "2023-09-02T07:08:28.642Z",
+      "amount": 125.43
+    },
+    {
+      "customer": 1,
+      "date": "2023-09-02T12:40:21.315Z",
+      "amount": 111.22
+    },
+    {
+      "customer": 4,
+      "date": "2023-09-14T02:27:30.930Z",
+      "amount": 87.62
+    },
+    {
+      "customer": 3,
+      "date": "2023-07-29T11:39:04.311Z",
+      "amount": 82.17
+    },
+    {
+      "customer": 1,
+      "date": "2023-10-24T16:50:44.220Z",
+      "amount": 187.16
+    },
+    {
+      "customer": 3,
+      "date": "2023-07-08T11:58:56.294Z",
+      "amount": 96.96
+    },
+    {
+      "customer": 2,
+      "date": "2023-09-20T00:32:50.083Z",
+      "amount": 114.02
+    },
+    {
+      "customer": 3,
+      "date": "2023-08-01T01:13:53.305Z",
+      "amount": 129.99
+    },
+    {
+      "customer": 1,
+      "date": "2023-08-20T04:10:35.431Z",
+      "amount": 188.31
+    }
+  ]
+}
