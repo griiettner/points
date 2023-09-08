@@ -43,6 +43,37 @@ thead {
   color: var(--secondary-color);
 }
 
+th {
+  cursor: pointer;
+}
+
+th > span {
+  display: inline-flex;
+  gap: 5px;
+}
+
+th > span:after,
+th > span:after {
+  content: "";
+  left: 3px;
+  display: block;
+  width: 0;
+  height: 0;
+  border: solid 5px transparent;
+  margin: 4px 4px 0 3px;
+  background: transparent;
+}
+
+th > span.asc:after {
+  border-bottom: solid 7px var(--secondary-color);
+  border-top-width: 0;
+}
+
+th > span.desc:after {;
+  border-top: solid 7px var(--secondary-color);
+  border-bottom-width: 0;
+}
+
 th, td {
   padding: 10px;
   border: 1px solid var(--border-color);
