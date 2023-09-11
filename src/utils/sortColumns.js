@@ -16,12 +16,12 @@ import { COLUMN_DATE, COLUMN_AMOUNT, COLUMN_POINTS, SORT_ASC } from './config';
  * const sortedHistory = sortColumns(customerHistory, { key: 'date', direction: 'asc' });
  */
 export function sortColumns(customerHistory, sortConfig) {
-  const { direction } = sortConfig;
+  const { direction, key } = sortConfig;
   return [...customerHistory].sort((a, b) => {
     const amountA = a[COLUMN_AMOUNT];
     const amountB = b[COLUMN_AMOUNT];
 
-    switch (sortConfig.key) {
+    switch (key) {
       case COLUMN_DATE: {
         return getSorted(direction, new Date(a[COLUMN_DATE]), new Date(b[COLUMN_DATE]));
       }
