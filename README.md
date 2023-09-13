@@ -36,4 +36,5 @@ Run de application
 npm run dev
 ```
 
-<img width="936" alt="image" src="https://github.com/griiettner/points/assets/523781/35ed1c51-61a7-4c1c-8981-587df09b3546">
+![image](https://github.com/griiettner/points/assets/523781/982eda99-e8e0-4643-8d6c-5e55b49995ef)
+
