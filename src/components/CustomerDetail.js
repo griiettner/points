@@ -13,7 +13,7 @@ import { useParams } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 
 // Importing utility function to calculate points
-import { calculatePoints, sortColumns, COLUMN_DATE, COLUMN_AMOUNT, COLUMN_POINTS, SORT_ASC, SORT_DESC } from '../utils';
+import { calculatePoints, sortColumns, getMonthlyTotals, COLUMN_DATE, COLUMN_AMOUNT, COLUMN_POINTS, SORT_ASC, SORT_DESC } from '../utils';
 
 /**
  * CustomerDetail function component
@@ -32,6 +32,9 @@ export function CustomerDetail() {
 
   // Filtering the customer's transaction history based on the customer id
   const customerHistory = history.filter((item) => item.customer === parseInt(id, 10));
+
+  // Calculating the monthly totals for the customer's purchase history
+  const monthlyTotals = getMonthlyTotals(customerHistory);
 
   // Retrieving the customer's name based on the customer id
   const name = customers.find((customer) => customer.id === parseInt(id, 10)).name;
@@ -111,6 +114,23 @@ export function CustomerDetail() {
               </tr>
             )
           })}
+        </tbody>
+      </table>
+      <h2>Monthly Totals of last 3 months</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Month</th>
+            <th>Points</th>
+          </tr>
+        </thead>
+        <tbody>
+          {Object.keys(monthlyTotals).map((key) => (
+            <tr key={key}>
+              <td>{key}</td>
+              <td>{monthlyTotals[key]}</td>
+            </tr>
+          ))}
         </tbody>
       </table>
       <h3>Total Points: {totalPoints}</h3>
